@@ -1,0 +1,43 @@
+.main {
+    padding: 0 15px;
+    display: flex;
+    min-height: calc(100vh - 80px);
+}
+
+.content {
+    align-self: center;
+    &__title {
+        font-family: $title-font;
+        font-size: 72px;
+        line-height: 104px;
+        color: $color-white;
+        padding-bottom: 32px;
+    }
+
+    &__text {
+        max-width: 510px;
+        font-family: $base-font;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: $color-white;
+        padding-bottom: 32px;
+    }
+
+    &__btn {
+        font-family: $base-font;
+        font-weight: 500;
+        font-size: 20px;
+        color: $color-white;
+        background-color: #2C4F8D;
+        border-radius: 7px;
+        padding: 13px 40px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .1s linear;
+        &:hover {
+            background-color: #223f71;
+        }
+    }
+}
