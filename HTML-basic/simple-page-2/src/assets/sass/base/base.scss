@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+    font-family: $base-font;
+    font-size: $base-font-size;
+    line-height: 1.5;
+    overflow-y: scroll;
+    min-height: 100%;
+    word-wrap: break-word;
+}
+
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    align-items: stretch;
+    display: block;
+    flex-direction: column;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1820px;
+    margin: 0 auto;
+}
+
+.page {
+    padding: 0 15px;
+    min-height: 100vh;
+    background-image: url('../../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}

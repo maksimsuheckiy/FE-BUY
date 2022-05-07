@@ -1,0 +1,10 @@
+.main-section {
+  &__text {
+    font-family: $base-font;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: $color-black;
+    max-width: 620px;
+  }
+}

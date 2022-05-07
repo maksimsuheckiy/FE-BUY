@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 73px;
+  padding-top: 47px;
+  box-sizing: content-box;
+  &__logo {
+    width: 68px;
+    height: auto;
+  }
+
+  &__menu {
+    width: 47px;
+    height: auto;
+  }
+}

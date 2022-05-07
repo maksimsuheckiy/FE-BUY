@@ -1,0 +1,14 @@
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 68px;
+  &__text {
+    font-family: $base-font;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.075em;
+    color: $color-black;
+  }
+}
