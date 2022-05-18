@@ -1,0 +1,68 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: content-box;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.company {
+  display: flex;
+  align-items: start;
+  text-decoration: none;
+  &__logo {
+    width: 56px;
+    height: 41px;
+    padding-right: 10px;
+  }
+
+  &__title {
+    font-family: $logo-font-family;
+    color: $primary-color;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.menu {
+  display: flex;
+  align-self: end;
+  gap: 43px;
+  height: 30px;
+  position: relative;
+  right: 100px;
+  &__link {
+    font-family: $base-font-family;
+    color: $dark-color;
+    font-size: $base-font-size;
+    line-height: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .2s;
+    &:hover {
+      color: $primary-color;
+      border-bottom: 4px solid;
+    }
+  }
+}
+
+.localization {
+  font-family: $base-font-family;
+  font-size: 16px;
+  line-height: 30px;
+  color: $darkgray-color;
+  cursor: pointer;
+  &::after {
+    content: "";
+    border: solid $darkgray-color;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    margin-left: 6px;
+    margin-bottom: 3px;
+  }
+}

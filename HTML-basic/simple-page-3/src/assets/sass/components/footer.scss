@@ -1,0 +1,95 @@
+.footer {
+  background: linear-gradient(to bottom, #fff 0%, #fff 25%, #f8f8f8 25%, #f8f8f8 100%);
+}
+
+.jobs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 50px 45px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
+  &__image {
+    width: 172px;
+    height: 134px;
+  }
+
+  &__content {
+    margin-right: auto;
+    padding-left: 45px;
+  }
+
+  &__title {
+    font-family: $base-font-family;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 45px;
+    color: $black-color;
+    padding-bottom: 17px;
+  }
+
+  &__text {
+    font-family: $base-font-family;
+    font-size: 16px;
+    line-height: 30px;
+    color: $dimgray-color;
+    max-width: 410px;
+  }
+
+  &__btn {
+    background-color: $primary-color;
+    border-radius: 10px;
+    font-family: $base-font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 17px 90px;
+    transition: .2s linear;
+    margin-right: 25px;
+    &:hover {
+      background-color: #449ef1e6;
+    }
+  }
+}
+
+.company-information {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  padding: 70px 0;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 400px;
+  &__slogan {
+    padding-top: 8px;
+    font-family: $base-font-family;
+    font-size: 18px;
+    line-height: 30px;
+    color: $silver-color;
+  }
+}
+
+.legal {
+  padding-left: 30px;
+  &__text {
+    font-family: $base-font-family;
+    font-size: 16px;
+    line-height: 30px;
+    color: #AFB5C0;
+  }
+}
+
+.social {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
