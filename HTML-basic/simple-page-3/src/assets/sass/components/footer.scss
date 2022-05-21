@@ -1,5 +1,6 @@
 .footer {
   background: linear-gradient(to bottom, #fff 0%, #fff 25%, #f8f8f8 25%, #f8f8f8 100%);
+  padding: 0 20px;
 }
 
 .jobs {
@@ -49,7 +50,7 @@
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-    padding: 17px 90px;
+    padding: 17px 92px;
     transition: .2s linear;
     margin-right: 25px;
     &:hover {

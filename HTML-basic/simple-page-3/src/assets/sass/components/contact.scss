@@ -1,0 +1,56 @@
+.contacts-hero {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: minmax(320px, 585px) minmax(320px, 545px);
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  margin-bottom: 80px;
+  &__content {
+    max-width: 620px;
+  }
+
+  &__title {
+    font-family: $base-font-family;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: $dimgray-color;
+    padding-bottom: 90px;
+    max-width: 550px;
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: $primary-color;
+    border-radius: 10px;
+    font-family: $base-font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 17px 81px;
+    transition: .2s linear;
+    margin-right: 25px;
+    box-shadow: 0 20px 54px 3px rgb(95 122 126 / 20%);
+    &:hover {
+      background-color: #449ef1e6;
+    }
+  }
+
+  &__img {
+    width: 546px;
+    height: 281px;
+  }
+}
