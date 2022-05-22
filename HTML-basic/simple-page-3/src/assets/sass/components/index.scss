@@ -1,8 +1,7 @@
 .about-hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 110px;
     margin-bottom: 195px;
     &__content {
         max-width: 650px;
@@ -34,7 +33,6 @@
     }
 
     &__image {
-        margin-top: 15px;
         width: 361px;
         height: 298px;
     }

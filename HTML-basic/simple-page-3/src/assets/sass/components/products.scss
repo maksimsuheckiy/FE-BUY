@@ -1,7 +1,7 @@
 .contacts-hero {
   display: grid;
   grid-column-gap: 10px;
-  grid-template-columns: minmax(320px, 585px) minmax(320px, 545px);
+  grid-template-columns: 585px 545px;
   align-items: center;
   justify-content: center;
   padding-top: 30px;
@@ -55,16 +55,17 @@
   }
 }
 
+.clients-container {
+  margin-bottom: 130px;
+}
+
 .clients {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   justify-content: center;
   border-radius: 10px;
   box-shadow: 0 20px 54px 3px rgb(95 122 126 / 20%);
-  max-width: 1140px;
-  margin: 0 auto 130px;
   padding: 35px 15px;
-  box-sizing: border-box;
 }
 
 .client {
@@ -200,7 +201,7 @@
   grid-template-columns: repeat(auto-fit, minmax(120px, 190px));
   justify-content: center;
   align-items: center;
-  grid-gap: 50px;
+  grid-gap: 47px;
   margin-top: 75px;
   margin-bottom: 175px;
   &__item {
