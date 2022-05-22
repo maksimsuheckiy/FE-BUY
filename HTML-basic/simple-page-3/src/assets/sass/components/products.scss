@@ -1,0 +1,210 @@
+.contacts-hero {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: minmax(320px, 585px) minmax(320px, 545px);
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  margin-bottom: 80px;
+  &__content {
+    max-width: 620px;
+  }
+
+  &__title {
+    font-family: $base-font-family;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: $dimgray-color;
+    padding-bottom: 90px;
+    max-width: 550px;
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: $primary-color;
+    border-radius: 10px;
+    font-family: $base-font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 17px 81px;
+    transition: .2s linear;
+    margin-right: 25px;
+    box-shadow: 0 20px 54px 3px rgb(95 122 126 / 20%);
+    &:hover {
+      background-color: #449ef1e6;
+    }
+  }
+
+  &__img {
+    width: 546px;
+    height: 281px;
+  }
+}
+
+.clients {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 20px 54px 3px rgb(95 122 126 / 20%);
+  max-width: 1140px;
+  margin: 0 auto 130px;
+  padding: 35px 15px;
+  box-sizing: border-box;
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:nth-child(2) {
+    &::before {
+      content: "";
+      width: 2px;
+      min-height: 125px;
+      background-color: #EEEFF2;
+      margin-right: auto;
+    }
+
+    &::after {
+      content: "";
+      width: 2px;
+      min-height: 125px;
+      background-color: #EEEFF2;
+      margin-left: auto;
+    }
+  }
+
+  &__img {
+    width: 55px;
+    height: 55px;
+  }
+
+  &__desc {
+    padding-left: 35px;
+  }
+
+  &__count {
+    font-family: $base-font-family;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: $black-color;
+    padding-bottom: 5px;
+  }
+
+  &__type {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $dimgray-color;
+  }
+}
+
+.products {
+  padding: 40px 0 100px;
+  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+  &__heading {
+    font-family: $base-font-family;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: $black-color;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $dimgray-color;
+    text-align: center;
+    max-width: 770px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 355px));
+    grid-gap: 50px 30px;
+    justify-content: center;
+  }
+}
+
+.product {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 20px 30px 35px;
+  &__logo {
+    width: 35px;
+    height: 39px;
+  }
+
+  &__title {
+    font-family: $base-font-family;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: $darkgray-color;
+    padding: 20px 0 16px;
+  }
+
+  &__desc {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $darkgray-color;
+    padding-bottom: 45px;
+  }
+
+  &__btn {
+    display: inline-block;
+    border: 2px solid $primary-color;
+    border-radius: 47px;
+    font-family: $base-font-family;
+    font-weight: 500;
+    font-size: 16px;
+    color: $primary-color;
+    text-decoration: none;
+    padding: 5px 35px;
+    transition: .2s;
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+}
+
+.product-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 190px));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 50px;
+  margin-top: 75px;
+  margin-bottom: 175px;
+  &__item {
+    width: 190px;
+    height: auto;
+  }
+}
