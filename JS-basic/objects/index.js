@@ -41,7 +41,7 @@ function profileMagazine(label, schedule, products) {
     }
 }
 
-const magazine = profileMagazine('zara', 'пн-вс: 10:00-22:00', [
+const magazineProducts = [
     {
         title: 't-shirt',
         price: 3400,
@@ -77,19 +77,17 @@ const magazine = profileMagazine('zara', 'пн-вс: 10:00-22:00', [
         price: 300,
         amount: 500,
     }
-]);
-
-magazine.makeBlackFriday(0.5);
-magazine.verifySore([
+];
+const storeProducts = [
     {
         title: 't-shirt',
         price: 3400,
-        amount: 200,
+        amount: 100,
     },
     {
         title: 'Jacket-shirt',
         price: 800,
-        amount: 200,
+        amount: 100,
     },
     {
         title: 'dress-seater',
@@ -114,6 +112,10 @@ magazine.verifySore([
     {
         title: 'top',
         price: 300,
-        amount: 600,
+        amount: 500,
     }
-]);
+];
+const magazine = profileMagazine('zara', 'пн-вс: 10:00-22:00', magazineProducts);
+
+magazine.makeBlackFriday(0.5);
+magazine.verifySore(storeProducts);
