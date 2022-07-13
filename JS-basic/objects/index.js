@@ -20,23 +20,23 @@ function profileMagazine(label, schedule, products) {
         makeBlackFriday: function(discount) {
             if (discount <= 0 || discount >= 1) return null
 
-            this.products.map(product => {
+            this.products.forEach(product => {
                 product.price = product.price - (product.price * discount);
             });
         },
         verifySore: function (store) {
-            const mismatchProducts = [];
+            let mismatchProducts = '';
 
-            this.products.map(shopProduct => {
+            this.products.forEach(shopProduct => {
                 const storeProduct = store.find(product => product.productID === shopProduct.productID);
 
                 if (storeProduct.amount !== shopProduct.amount) {
-                    mismatchProducts.push(storeProduct.title);
+                    mismatchProducts += ` ${storeProduct.title}`;
                     shopProduct.amount = storeProduct.amount;
                 }
             })
 
-            return mismatchProducts.join(', ');
+            return mismatchProducts;
         }
     }
 }
@@ -74,7 +74,7 @@ const magazineProducts = [
     },
     {
         productID: 1006,
-        title: 'demi-season jacket',
+        title: 'jacket',
         price: 1500,
         amount: 100,
     },
@@ -114,13 +114,13 @@ const storeProducts = [
         productID: 1005,
         title: 'cardigan',
         price: 1000,
-        amount: 100,
+        amount: 300,
     },
     {
         productID: 1006,
-        title: 'demi-season jacket',
+        title: 'jacket',
         price: 1500,
-        amount: 100,
+        amount: 200,
     },
     {
         productID: 1007,
@@ -129,7 +129,7 @@ const storeProducts = [
         amount: 600,
     }
 ];
-const magazine = profileMagazine('zara', 'пн-вс: 10:00-22:00', magazineProducts);
+const zara = profileMagazine('zara', 'mon-sun: 10am - 10pm', magazineProducts);
 
-magazine.makeBlackFriday(0.5);
-magazine.verifySore(storeProducts);
+zara.makeBlackFriday(0.5);
+zara.verifySore(storeProducts);
