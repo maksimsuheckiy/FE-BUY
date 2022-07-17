@@ -44,9 +44,7 @@ function wordGuessingGame() {
         if (!result) {
             errorsCounter += 1;
             alert('Ваша здогадка неправильна');
-        }
-
-        if (result) {
+        } else {
             guessIndex += 1
             errorsCounter = 0;
         }

@@ -94,7 +94,13 @@ function profileMagazine(label, schedule, products, description, startSaleDate, 
         checkDayToSale(startSaleDate) {
             const startSaleDateISO = startSaleDate.split('.').reverse().join('-');
             const startSaleDateMs = Date.parse(startSaleDateISO);
-            return Math.ceil(Math.abs( Date.now() - startSaleDateMs) / (1000 * 3600 * 24))
+
+            if (startSaleDateMs < Date.now()) {
+                console.error('Date is not valid');
+                return null
+            } else {
+                return Math.ceil(Math.abs( Date.now() - startSaleDateMs) / (1000 * 3600 * 24))
+            }
         },
         prepareInventory() {
             const allAmount = this.products.reduce((acc, currentProduct) => {
@@ -117,5 +123,5 @@ const zerno = profileMagazine(
 
 zerno.ellipsisText('The best clothes magazine!', 16);
 zerno.censorshipCheck('my shop is the best fuck of all Fuck', 'fuck');
-zerno.checkDayToSale('22.07.2022');
+zerno.checkDayToSale('16.07.2022');
 zerno.prepareInventory();
