@@ -8,8 +8,8 @@ const checkMoney = () => {
 
     listItems.forEach(item => {
         const currentItemText = item.querySelector('.list__text');
-        const fondMoney = item.querySelector('.list__text .list__value');
-        const goalMoney = item.querySelector('.list__goal .list__goal-value');
+        const fondMoney = item.querySelector('.list__value');
+        const goalMoney = item.querySelector('.list__goal-value');
         const percent = checkPercent(fondMoney.textContent, goalMoney.textContent);
 
         if (percent <= 20) {
