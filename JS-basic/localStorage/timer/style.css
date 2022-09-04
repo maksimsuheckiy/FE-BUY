@@ -1,0 +1,12 @@
+.timer {
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    row-gap: 3px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.error {
+    color: #FF0000;
+}
